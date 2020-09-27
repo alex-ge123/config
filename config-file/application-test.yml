@@ -1,0 +1,32 @@
+## 应用名称
+#spring.application.name=j2003_spc_producer
+## 应用服务 WEB 访问端口
+#server.port=8080
+## spring 静态资源扫描路径
+#spring.resources.static_locations=classpath:/static/
+## 数据库驱动：
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+## 数据源名称
+#spring.datasource.name=defaultDataSource
+## 数据库连接地址
+#spring.datasource.url=jdbc:mysql://localhost:3306/blue?serverTimezone=UTC
+## 数据库用户名&密码：
+#spring.datasource.username=***
+#spring.datasource.password=***
+
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db2?serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL55Dialect
+
+server:
+  port: 10001
